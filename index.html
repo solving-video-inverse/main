@@ -328,13 +328,13 @@
             </tr>
             <tr>
               <td style="width: 30%; font-size: 20px; vertical-align:middle;">Accessibility</td>
-              <td style="width: 50%; font-size: 20px; vertical-align:middle;">Using famous open-soured pre-trained image diffusion model (ADM)</td>
+              <td style="width: 50%; font-size: 20px; vertical-align:middle;">Using open-sourced image diffusion model (ADM)</td>
             </tr>
           </tbody>
         </table>
         
-        Experimental results confirm that our method demonstrates robustness against 
-        various combinations of spatio-temporal degradations, achieving state-of-the-art reconstructions.
+        Experimental results demonstrate that our method effectively addresses various temporal and spatial degradations in video inverse problems, 
+          achieving state-of-the-art reconstructions.
       </p>
 
         </div>
@@ -349,7 +349,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-sixths">
-        <h2 class="title is-3">Batch-consistent Reconstruction</h2>
+        <h2 class="title is-3">Batch-consistent Sampling</h2>
         <div class="content has-text-justified">
           <div class="center-item">
           <img src="static/images/1.png" alt="1" style="width: 80%"/>
@@ -357,7 +357,7 @@
           <p style=" font-size:18px;">
             Geometric illustration of the sampling path evolution.
             (a) Common batch sampling in image diffusion models is batch-independent. 
-            (b) In batch-consistent sampling, identical images are sampled by synchronizing the stochastic noise components. 
+            (b) In batch-identical sampling, identical images are sampled by synchronizing the stochastic noise components. 
             (c) Frame-dependent perturbation through multi-step CG ensures that the batch-consistent sampling meets the spatio-temporal data consistency.
           </p>
       </div>
@@ -379,7 +379,7 @@
             Illustration of the intermediate sampling process in our video inverse problem solver that leverages only image diffusion models.
             By taking <strong> multi-step CG </strong> in the video space of the Tweedie denoised manifold, we iteratively solve the video inverse problem.
             We synchronize the <strong> stochastic noise components </strong> in the reverse diffusion process
-            to ensure <strong> batch-consistent reconstruction </strong> with state-of-the-art reconstruction performance.
+            to ensure <strong> batch-consistent sampling </strong> with state-of-the-art reconstruction performance.
           </p>
         </div>
       </div>
@@ -525,7 +525,7 @@
         <!-- End teaser video -->
 
 <!-- Visualization -->
-<section class="section hero">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-sixths">
