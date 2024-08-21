@@ -171,11 +171,11 @@
 
   <div class="columns is-centered" style="margin-top:-20px">
     <h1 class="is-size-3"> 
-      <mark style="background: rgb(255, 255, 102)"> Solving temporal degradations using only image diffusion models, 
+      <mark style="background: rgb(255, 255, 102)"> Solving video inverse problems using only image diffusion models, 
   </div>
   <div class="columns is-centered" style="margin-top:-10px">
     <h1 class="is-size-3"> 
-      <mark style="background: rgb(255, 255, 102)"> with batch-consistent sampling stretagy.
+      <mark style="background: rgb(255, 255, 102)"> with batch-consistent reconstruction stretagy.
       </mark></h1>
   </div> 
 
@@ -305,8 +305,8 @@
          Diffusion model-based inverse problem solvers (DIS) enable unconditional diffusion models to solve a wide range of image inverse problems.
          However, their application to video inverse problems involving temporal degradation remains limited.
          In response, we introduce an innovative video inverse solver using pre-trained image diffusion models by solving video inverse optimization within the Tweedie denoised manifold.
-         We address the <strong> batch inconsistency </strong> issue in diffusion models by <strong> controlling batch-stochasticity </strong>,
-         thereby enabling <strong> batch-consistent sampling </strong>.
+         We address the <strong> batch inconsistency </strong> issue in diffusion models by <strong> controlling batch-stochasticity</strong>,
+         thereby enabling <strong> batch-consistent reconstruction</strong>.
          <br>
 
         <table style="width: 80%; margin-left:auto; margin-right:auto; text-align: center; 
@@ -377,7 +377,7 @@
             Illustration of the intermediate sampling process in our video inverse problem solver that leverages only image diffusion models.
             By taking <strong> multi-step CG </strong> in the video space of the Tweedie denoised manifold, we iteratively solve the video inverse problem.
             We synchronize the <strong> stochastic noise components </strong> in the reverse diffusion process
-            to ensure <strong> batch-consistent sampling </strong> with state-of-the-art reconstruction performance.
+            to ensure <strong> batch-consistent reconstruction </strong> with state-of-the-art reconstruction performance.
           </p>
         </div>
       </div>
@@ -533,8 +533,8 @@
           <img src="static/images/video_results.gif" alt="2"/>
           </div>
           <p style=" font-size:18px;">
-            We provide visualization of reconstruction results with comparative methods.
-            We also include ablation study results in video format.
+            We provide visualization of reconstruction results with comparative methods in video format.
+            We also provide ablation study results.
           </p>
         </div>
       </div>
