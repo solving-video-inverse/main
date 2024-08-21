@@ -304,7 +304,9 @@
           <p style="font-size:18px;">
          Diffusion model-based inverse problem solvers (DIS) enable unconditional diffusion models to solve a wide range of image inverse problems.
          However, their application to video inverse problems involving temporal degradation remains limited.
-         In response, we introduce an innovative video inverse solver using pre-trained image diffusion models by solving video inverse optimization within the Tweedie denoised manifold.
+         In response, we introduce an innovative video inverse solver using only image diffusion models.
+        Specifically, our method treats the time dimension of a video as the batch dimension of image diffusion models, 
+            thereby solving spatio-temporal optimization problems within <strong> denoised spatio-temporal batches </strong> derived from each image diffusion model.
          We address the <strong> batch inconsistency </strong> issue in diffusion models by <strong> controlling batch-stochasticity</strong>,
          thereby enabling <strong> batch-consistent sampling</strong>.
          <br>
